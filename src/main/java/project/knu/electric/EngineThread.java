@@ -2,13 +2,13 @@ package project.knu.electric;
 
 import javax.swing.*;
 
-public class engineThread implements Runnable {
+public class EngineThread implements Runnable {
 
     private final int CYCLE_DURATION = 30 * 1000;
     private JSlider weightSensor;
     private JTextArea log;
 
-    public engineThread(JSlider weightSensor, JTextArea log) {
+    public EngineThread(JSlider weightSensor, JTextArea log) {
         this.weightSensor = weightSensor;
         this.log = log;
     }

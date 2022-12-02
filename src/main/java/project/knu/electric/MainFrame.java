@@ -90,7 +90,7 @@ public class MainFrame extends JFrame {
         stopEngineButton.setEnabled(true);
         startEngineButton.setEnabled(false);
 
-        thread = new Thread(new engineThread(slider, logArea));
+        thread = new Thread(new EngineThread(slider, logArea));
         thread.start();
     }
 
